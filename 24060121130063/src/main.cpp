@@ -5,18 +5,7 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <string>
-#include "IBO.cpp"
-
-// #define GLCall(x) GLClearError(); x; GLLogCall(#x, __FILE__, __LINE__)
-
-// static void GLClearError() {
-//     while (glGetError() != GL_NO_ERROR);
-// }
-// static void GLLogCall(const char* function_name, const char* file, int line) {
-//     while (GLenum error = glGetError()) {
-//         cout << "Triggered Error Code: " << error << " at function call " << function_name << ", at " << file << ":" << line << std::endl;
-//     }
-// }
+#include "SaintQuartz.cpp"
 
 int main(void) {
     GLFWwindow* window;
@@ -42,7 +31,7 @@ int main(void) {
 	// menggunakan OpenGL 3.0 (masih dapat menggunakan legacy)
 
     /* Create a windowed mode window and its OpenGL context */
-    std::string window_title = "Template - GLFW";
+    std::string window_title = "Saint Quartzzzz";
     window = glfwCreateWindow(640, 480, window_title.c_str(), NULL, NULL);
     if (!window) {
         glfwTerminate();
